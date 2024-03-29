@@ -1,10 +1,11 @@
+import SideBarAdmin from "@/components/header/SideBarAdmin";
+
 const DashboardLayout = ({ children }) => {
   return (
-    <div className="flex gap-8">
-      <aside className="flex-[2]">
-        {/* Include shared UI here e.g. a sidebar */}
-      </aside>
-      <div className=" container  ">{children}</div>
+    <div className="flex gap-4">
+      <SideBarAdmin />
+
+      <div className="  container flex  bg-slate-50 ml-56">{children}</div>
     </div>
   );
 };

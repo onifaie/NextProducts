@@ -4,11 +4,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/header/Navbar";
 import Footer from "@/components/footer/footer";
-import { store } from "./store";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
-
 const inter = Inter({ subsets: ["latin"] });
+import { ReduxProvider } from "./api/ReduxProvider";
 
 export default function RootLayout({ children }) {
   return (
@@ -18,7 +17,7 @@ export default function RootLayout({ children }) {
 
         <div className=" container px-10 mt-5 ">
           <BrowserRouter>
-            <Provider store={store}>{children}</Provider>
+            <ReduxProvider>{children}</ReduxProvider>
           </BrowserRouter>
         </div>
       </body>

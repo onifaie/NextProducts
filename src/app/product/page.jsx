@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useGetProductByNameQuery } from "../../api/apiproduct";
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import Image from 'next/image';
+import { useGetProductByNameQuery } from '@/redux/app/api/apiproduct';
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const { data, isSuccess, isLoading, error } = useGetProductByNameQuery();
@@ -12,86 +12,86 @@ export default function Home() {
   console.log(data);
 
   return (
-    <div className="container flex flex-col-5  flex-wrap gap-4 px-20  ">
-      <div className=" container bg-slate-50 p-4 shadow-lg rounded-lg text-blue-500">
-        <div className=" container grid grid-cols-4 gap-3">
+    <div className='container flex flex-col-5  flex-wrap gap-4 px-20  '>
+      <div className=' container bg-slate-50 p-4 shadow-lg rounded-lg text-blue-500'>
+        <div className=' container grid grid-cols-4 gap-3'>
           <div>
-            <form class="max-w-sm mx-auto">
+            <form class='max-w-sm mx-auto'>
               <label
-                for="countries"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                for='countries'
+                class='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
               >
                 Select an option
               </label>
               <select
-                id="countries"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                id='countries'
+                class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
               >
                 <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                <option value='US'>United States</option>
+                <option value='CA'>Canada</option>
+                <option value='FR'>France</option>
+                <option value='DE'>Germany</option>
               </select>
             </form>
           </div>
           <div>
-            <form class="max-w-sm mx-auto">
+            <form class='max-w-sm mx-auto'>
               <label
-                for="countries"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                for='countries'
+                class='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
               >
                 Select an option
               </label>
               <select
-                id="countries"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                id='countries'
+                class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
               >
                 <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                <option value='US'>United States</option>
+                <option value='CA'>Canada</option>
+                <option value='FR'>France</option>
+                <option value='DE'>Germany</option>
               </select>
             </form>
           </div>
           <div>
-            <form class="max-w-sm mx-auto">
+            <form class='max-w-sm mx-auto'>
               <label
-                for="countries"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                for='countries'
+                class='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
               >
                 Select an option
               </label>
               <select
-                id="countries"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                id='countries'
+                class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
               >
                 <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                <option value='US'>United States</option>
+                <option value='CA'>Canada</option>
+                <option value='FR'>France</option>
+                <option value='DE'>Germany</option>
               </select>
             </form>
           </div>
           <div>
-            <form class="max-w-sm mx-auto">
+            <form class='max-w-sm mx-auto'>
               <label
-                for="countries"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                for='countries'
+                class='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
               >
                 Select an option
               </label>
               <select
-                id="countries"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                id='countries'
+                class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
               >
                 <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                <option value='US'>United States</option>
+                <option value='CA'>Canada</option>
+                <option value='FR'>France</option>
+                <option value='DE'>Germany</option>
               </select>
             </form>
           </div>
@@ -100,26 +100,26 @@ export default function Home() {
       {data.products.map((product) => (
         <div
           key={product.id}
-          className="card  w-52    justify-center  shadow-2xl  mt-4 p-2 items-center border-orange-500    "
+          className='card  w-52    justify-center  shadow-2xl  mt-4 p-2 items-center border-orange-500    '
         >
           <Image
             src={product.images[0]}
-            alt=""
+            alt=''
             height={100}
             width={100}
-            className=" w-full mb-4"
+            className=' w-full mb-4'
           />
           <h3>{product.title}</h3>
 
           <Link
             href={`/pages/product/${product.id}`}
-            class="font-medium text-blue-600 dark:text-blue-500 hover:underline mb-1 -mt-96"
+            class='font-medium text-blue-600 dark:text-blue-500 hover:underline mb-1 -mt-96'
           >
             Read more
           </Link>
         </div>
       ))}
-      <hr className=" text-purple-600 text-2xl"></hr>
+      <hr className=' text-purple-600 text-2xl'></hr>
     </div>
   );
 }

@@ -1,10 +1,13 @@
+"use client";
+
 import { useState } from "react";
 import styles from "../../styles/Form.module.css";
 import { useRegisterMutation } from "../../redux/features/auth/authApiSlice";
 import Cookies from "js-cookie";
-import { useNavigate } from "react-router";
+import { useRouter } from "next/navigation";
+
 const SignupForm = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const [userInputs, setUserInputs] = useState({
     first_name: "",
@@ -32,7 +35,7 @@ const SignupForm = () => {
           last_name: "",
           password: "",
         });
-        navigate("/dashboard");
+        router.push("/dashboard");
       }
     } catch (error) {
       console.log(error);
